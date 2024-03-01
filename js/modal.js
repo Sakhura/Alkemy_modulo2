@@ -1,0 +1,1 @@
+$("#miModal").modal("show");

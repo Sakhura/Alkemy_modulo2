@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones recientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transacciones recientes</h1>
+        <form id="filter-form">
+            <label for="tipo">Tipo de transacción:</label>
+            <select id="tipo" name="tipo">
+                <option value="">Todos</option>
+                <option value="deposito">Depósito</option>
+                <option value="envio">Envío</option>
+            </select>
+            <label for="fecha-inicio">Fecha de inicio:</label>
+            <input type="date" id="fecha-inicio" name="fecha-inicio">
+            <label for="fecha-fin">Fecha fin:</label>
+            <input type="date" id="fecha-fin" name="fecha-fin">
+            <button type="submit">Filtrar</button>
+        </form>
+        <table id="transacciones-table">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Tipo</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

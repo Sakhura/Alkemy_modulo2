@@ -1,0 +1,67 @@
+Incorporación del Plugin Bootstrap-jQuery
+Elección del plugin:
+
+Para este caso, elegiremos el plugin Modal de Bootstrap-jQuery. Este plugin nos permitirá mostrar información adicional o formularios en una ventana emergente, lo que puede ser útil para:
+
+Mostrar detalles de una transacción en la página de Transacciones recientes.
+Mostrar un formulario para realizar un depósito o envío de dinero en las páginas correspondientes.
+Mostrar información de ayuda o contacto en cualquier página del sitio web.
+Integración del plugin:
+
+1. Descargar e instalar Bootstrap-jQuery:
+
+Descarga la última versión de Bootstrap-jQuery desde https://getbootstrap.com/docs/4.2/getting-started/download/.
+Incluye los archivos jquery.min.js y bootstrap.min.js en tu proyecto.
+
+2. Agregar el plugin Modal:
+
+En el HTML de la página donde deseas usar el modal, incluye el siguiente código:
+HTML
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Título del modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Contenido del modal...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+3. Activar el modal con JavaScript:
+
+Usa el siguiente código para abrir el modal cuando se haga clic en un botón o enlace:
+JavaScript
+$("#miModal").modal("show");
+Usa el código con precaución.
+Ejemplo de uso en la página de Transacciones recientes:
+
+Podemos usar el modal para mostrar detalles de una transacción al hacer clic en un botón "Ver detalles".
+El contenido del modal puede incluir la fecha, tipo, monto, destinatario (si aplica) y cualquier otra información relevante de la transacción.
+Integración con el diseño:
+
+Puedes personalizar el estilo del modal usando las clases de Bootstrap-jQuery.
+Asegúrate de que el diseño del modal se integre con el diseño general de tu wallet digital.
+Recursos adicionales:
+
+Documentación de Bootstrap-jQuery Modal: https://getbootstrap.com/docs/4.2/components/modal/
+Tutoriales de Bootstrap-jQuery: https://www.w3schools.com/bootstrap4/default.asp
+Espero que esta información te ayude a integrar el plugin Modal de Bootstrap-jQuery en tu wallet digital.
+
+Imagen:
+
+La imagen que has enviado muestra un ejemplo de cómo se puede usar el plugin Modal para mostrar un formulario de depósito en una ventana emergente.
+
+Nota:
+
+Este es solo un ejemplo de cómo se puede usar un plugin Bootstrap-jQuery en una wallet digital. Puedes elegir otro plugin o usar el plugin Modal de una forma diferente según tus necesidades.
