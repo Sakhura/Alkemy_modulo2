@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Simular la obtención del saldo actual (reemplazar con API real)
-    var saldoActual = 1000.50;
-    $("#saldo-cuenta").text("S/. " + saldoActual.toFixed(2));
+    var saldoActual = "1.000.000";
+    $("#saldo-cuenta").text("$ " + saldoActual.toFixed(2));
 
     $("#ver-transacciones").click(function() {
         window.location.href = "transactions.html";
